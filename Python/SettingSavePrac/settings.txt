@@ -1,0 +1,4 @@
+Timeout: 10
+Retry Settings: 10
+Notification Method: Email
+# of Servers: 10
