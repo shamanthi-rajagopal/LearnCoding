@@ -16,13 +16,13 @@ def connect(variable):
 def send_email(variable):
     # Construct the email message with the provided variable
     message = Mail(
-        from_email='shamanthi2025@gmail.com',
-        to_emails='shamanthi2025@gmail.com',
+        from_email='example@gmail.com',
+        to_emails='example@gmail.com',
         subject='Sending with Twilio SendGrid: Variable Value',
         html_content=f'<strong> Hello, this email is sent to tell you that the variable value is: {variable}</strong>')
 
     # Initialize the SendGrid client with your API key
-    sg = SendGridAPIClient('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')
+    sg = SendGridAPIClient('SEND_GRID_API_KEY')
 
     # Send the email
     response = sg.send(message)
